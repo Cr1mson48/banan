@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/form.css">
+  </head>
+  <body> 
+    <header class="header container">
+      <div class="header__logo"><img class="img" src="./static/img/logo.png" alt="trade-wave logo"></div>
+    </header>
+    <div class="container form"> 
+      <div class="island"> 
+        <div class="island__header"> 
+          <h2 class="title">Create Account</h2>
+        </div>
+        <div class="island__content">
+          <form class="login-form" id="form" action="{{ url_for('create') }}" method="post">
+            <label class="input-label">Email address
+              <div class="input"> 
+                <input class="input__field" type="email" id="email" name="email" placeholder="enter your email" autocomplete="username"/>
+              </div>
+            </label>
+            <label class="input-label">Password
+              <div class="input"> 
+                <input class="input__field" type="password" id="password" name="password" placeholder="enter your password" autocomplete="current-password"/>
+                <div class="input__suffix">
+                  <button class="show-password" data-attr-show-pwd="false" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6C17.04 6 20.4 10.8 20.4 12C20.4 13.2 17.04 18 12 18C6.95998 18 3.59998 13.2 3.59998 12C3.59998 10.8 6.95998 6 12 6ZM12 7.8C9.68038 7.8 7.79998 9.6804 7.79998 12C7.79998 14.3196 9.68038 16.2 12 16.2C14.3196 16.2 16.2 14.3196 16.2 12C16.2 9.6804 14.3196 7.8 12 7.8ZM12 10.2C12.9941 10.2 13.8 11.0059 13.8 12C13.8 12.9941 12.9941 13.8 12 13.8C11.0059 13.8 10.2 12.9941 10.2 12C10.2 11.0059 11.0059 10.2 12 10.2Z" fill="#99A2AD"/>
+</svg>
+                  </button>
+                </div>
+              </div>
+            </label>
+            <label class="input-label">Confirm password
+              <div class="input"> 
+                <input class="input__field" type="password" id="password_again" name="password_again" placeholder="enter your password" autocomplete="current-password"/>
+                <div class="input__suffix">
+                  <button class="show-password" data-attr-show-pwd="false" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6C17.04 6 20.4 10.8 20.4 12C20.4 13.2 17.04 18 12 18C6.95998 18 3.59998 13.2 3.59998 12C3.59998 10.8 6.95998 6 12 6ZM12 7.8C9.68038 7.8 7.79998 9.6804 7.79998 12C7.79998 14.3196 9.68038 16.2 12 16.2C14.3196 16.2 16.2 14.3196 16.2 12C16.2 9.6804 14.3196 7.8 12 7.8ZM12 10.2C12.9941 10.2 13.8 11.0059 13.8 12C13.8 12.9941 12.9941 13.8 12 13.8C11.0059 13.8 10.2 12.9941 10.2 12C10.2 11.0059 11.0059 10.2 12 10.2Z" fill="#99A2AD"/>
+</svg>
+                  </button>
+                </div>
+              </div>
+            </label>
+            <div class="form-row">
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox"/><span class="checkbox__box"></span><span class="form__confirm-text">I agree to the <a class="link" href="#" target="_blank">Terms</a> &amp; <a class="link" href="#" target="_blank">Privacy Policy</a></span>
+              </label>
+            </div>
+            <button class="btn btn_primary form-btn">Registration</button>
+          </form>
+        </div>
+      </div><a class="link form-link" href="/login">I have an account</a>
+    </div>
+    <script src="static/js/index.js"> </script>
+    <script src="static/js/form.js"> </script>
+  </body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

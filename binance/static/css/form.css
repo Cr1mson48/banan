@@ -1,0 +1,74 @@
+.island {
+  max-width: 407px;
+  width: 100%;
+  background: var(--primary);
+  border-radius: 20px;
+  padding: 10px 16px 32px;
+}
+@media (min-width: 900px) {
+  .island {
+    padding: 10px 32px 32px;
+  }
+}
+.island__header {
+  padding: 24px 0 22px;
+  border-bottom: 1px solid #323232;
+}
+:root {
+  --margin-top-percent: 0.03;
+}
+
+@media (min-width: 1024px) and (min-height: 900px) {
+  :root {
+    --margin-top-percent: 0.12;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .form {
+    margin-top: min(127px, var(--screen-height, 100vh) * var(--margin-top-percent));
+  }
+}
+.form-btn {
+  width: calc(100% + 8px);
+  margin: 8px -4px;
+}
+.form-link {
+  margin-top: 26px;
+}
+@media (min-width: 900px) {
+  .form-link {
+    margin-top: 38px;
+  }
+}
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px 0;
+}
+.form-row__space-between {
+  justify-content: space-between;
+}
+@media (max-width: 340px) {
+  .form-row {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .form-row > *:last-child {
+    margin-top: 4px;
+    margin-left: auto;
+  }
+}
+.form__confirm-text {
+  font-family: "SF UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+}

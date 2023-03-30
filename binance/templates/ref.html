@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить API</title>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/form.css">
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__logo"><a href="/"><img class="img" src="static/img/logo.png" alt="trade-wave logo"></a></div>
+    </header>
+    <div class="container form">
+      <div class="island">
+        <div class="island__header">
+          <h2 class="title">Добавить кошелек</h2>
+        </div>
+        <div class="island__content">
+          <form class="login-form" method="post">
+            <label class="input-label">Address TRC20
+              <div class="input">
+                <input class="input__field" type="text" id="cosh" name="cosh" placeholder="enter your address"/>
+              </div>
+            </label>
+            <button class="btn btn_primary form-btn">Добавить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container form">
+      <div class="island">
+        <div class="island__header">
+          <h2 class="title">Реферальная ссылка</h2>
+        </div>
+        <div class="island__content">
+          <form class="login-form">
+            <label class="input-label">Referral link
+              <div class="input">
+                <input class="input__field" type="text" id="Referral" name="Referral" value="{{ url }}"/>
+              </div>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+        <div class="container form">
+      <div class="island">
+        <div class="island__header">
+          <h2 class="title">Колличество рефералов</h2>
+        </div>
+              <div class="input">
+                <input class="input__field" name="Referral" value="{{ count }}"/>
+              </div>
+        </div>
+      </div>
+    </div>
+            <div class="container form">
+      <div class="island">
+        <div class="island__header">
+          <h2 class="title">Прибыль от рефералов</h2>
+        </div>
+              <div class="input">
+                <input class="input__field" name="Referral" value="{{ profit }}"/>
+              </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/index.js"> </script>
+    <script src="static/js/form.js"> </script>
+  </body>
+</html>

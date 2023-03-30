@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__logo"><a href="/admin"><img class="img" src="static/img/logo.png" alt="trade-wave logo"></a></div>
+      <div class="header__account">
+        <div class="dropdown" id="dropdown">
+          <button class="dropdown-item dropdown-item_selected" id="dropdown-btn">
+            <div class="dropdown-item__icon"><img src="static/img/avatar-dropdown.png" alt="User"></div><span class="dropdown-item__text">{{ email }}</span>
+          </button>
+          <div class="dropdown__chevron"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_392_43)">
+<path d="M12.0002 13.172L16.9502 8.22198L18.3642 9.63598L12.0002 16L5.63623 9.63598L7.05023 8.22198L12.0002 13.172Z" fill="#8E8E8E"/>
+</g>
+<defs>
+<clipPath id="clip0_392_43">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+          </div>
+        </div>
+        <div class="dropdown-list" id="dropdown-list" style="visibility: hidden">
+
+          <button class="dropdown-item">
+              <div class="dropdown-item__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10" cy="10" r="10" fill="#EDF0F4"/>
+<path d="M9.97213 4L9.89258 4.27021V12.1105L9.97213 12.1899L13.6114 10.0386L9.97213 4Z" fill="#343434"/>
+<path d="M9.9724 4L6.33301 10.0386L9.9724 12.1899V8.38441V4Z" fill="#8C8C8C"/>
+<path d="M9.97257 12.8791L9.92773 12.9338V15.7266L9.97257 15.8575L13.6141 10.729L9.97257 12.8791Z" fill="#3C3C3B"/>
+<path d="M9.9724 15.8575V12.8791L6.33301 10.729L9.9724 15.8575Z" fill="#8C8C8C"/>
+<path d="M9.97266 12.1897L13.612 10.0385L9.97266 8.38428V12.1897Z" fill="#141414"/>
+<path d="M6.33301 10.0385L9.9724 12.1897V8.38428L6.33301 10.0385Z" fill="#393939"/>
+</svg>
+            </div><a href="/admin" class="dropdown-item__text">Админка</a>
+          </button>
+            <button class="dropdown-item">
+                <div class="dropdown-item__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10" cy="10" r="10" fill="#EDF0F4"/>
+<path d="M9.97213 4L9.89258 4.27021V12.1105L9.97213 12.1899L13.6114 10.0386L9.97213 4Z" fill="#343434"/>
+<path d="M9.9724 4L6.33301 10.0386L9.9724 12.1899V8.38441V4Z" fill="#8C8C8C"/>
+<path d="M9.97257 12.8791L9.92773 12.9338V15.7266L9.97257 15.8575L13.6141 10.729L9.97257 12.8791Z" fill="#3C3C3B"/>
+<path d="M9.9724 15.8575V12.8791L6.33301 10.729L9.9724 15.8575Z" fill="#8C8C8C"/>
+<path d="M9.97266 12.1897L13.612 10.0385L9.97266 8.38428V12.1897Z" fill="#141414"/>
+<path d="M6.33301 10.0385L9.9724 12.1897V8.38428L6.33301 10.0385Z" fill="#393939"/>
+</svg>
+              </div><a href="/delete" class="dropdown-item__text">Отключение</a>
+          </button>
+                        <button class="dropdown-item">
+                <div class="dropdown-item__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10" cy="10" r="10" fill="#EDF0F4"/>
+<path d="M9.97213 4L9.89258 4.27021V12.1105L9.97213 12.1899L13.6114 10.0386L9.97213 4Z" fill="#343434"/>
+<path d="M9.9724 4L6.33301 10.0386L9.9724 12.1899V8.38441V4Z" fill="#8C8C8C"/>
+<path d="M9.97257 12.8791L9.92773 12.9338V15.7266L9.97257 15.8575L13.6141 10.729L9.97257 12.8791Z" fill="#3C3C3B"/>
+<path d="M9.9724 15.8575V12.8791L6.33301 10.729L9.9724 15.8575Z" fill="#8C8C8C"/>
+<path d="M9.97266 12.1897L13.612 10.0385L9.97266 8.38428V12.1897Z" fill="#141414"/>
+<path d="M6.33301 10.0385L9.9724 12.1897V8.38428L6.33301 10.0385Z" fill="#393939"/>
+</svg>
+              </div><a href="logout" class="dropdown-item__text">Выйти</a>
+          </button>
+        </div>
+      </div>
+    </header>
+              <form class="login-form" method="post">
+            <button class="btn btn_primary form-btn">Сбросить</button>
+          </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h2 class="title" style="margin-left: 50%">Прибыль\убыток {{ s }} USDT</h2>
+        <section class="hist">
+          <div class="hist-list">
+            <div class="hist-list__header">
+                <div class="hist-list__cell"><span class="hist-list__text">Телефон</span></div>
+                <div class="hist-list__cell"><span class="hist-list__text">Информация об API</span></div>
+              <div class="hist-list__cell"><span class="hist-list__text">Прибыль/Убыток</span></div>
+              <div class="hist-list__cell"><span class="hist-list__text">Количество рефералов</span></div>
+              <div class="hist-list__cell"><span class="hist-list__text">Дата подключения</span></div>
+              <div class="hist-list__cell"><span class="hist-list__text">Кошелек</span></div>
+                <div class="hist-list__cell"><span class="hist-list__text">Баланс</span></div>
+              <div class="hist-list__cell hist-list__status-header"><span class="hist-list__text hist-list__text">Прибыль от реферала</span></div>
+            </div>
+            <div class="hist-list__body">
+                {% for el in user %}
+              <div class="hist-list__row hist-list__item">
+                <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text" style="color: #3ba6f4">{{ el.email }}</span></div>
+                  {% if el.api == "Подключен" %}
+                <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text_green">{{ el.api }}</span></div>
+                   {% elif el.api == "Отключен" %}
+                <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text_green" style="color: orange">{{ el.api }}</span></div>
+                  {% else %}
+                  <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text_red">{{ el.api }}</span></div>
+                  {% endif %}
+                  {% if el.profit|float >= 0 %}
+                <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text_green">{{ el.profit }}</span></div>
+                  {% else %}
+                  <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text_red">{{ el.profit }}</span></div>
+                  {% endif %}
+                  <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text">{{ el.count }}</span></div>
+                <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text">{{ el.created_date }}</span></div>
+                <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text">{{ el.cosh }}</span></div>
+                  {% if el.balance|float > 0 %}
+                  <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text_green">{{ el.balance }}</span></div>
+                  {% else %}
+                  <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text">{{ el.balance }}</span></div>
+                  {% endif %}
+                  {% if el.ref_profit|float > 0 %}
+                <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text_green">{{ el.ref_profit }}</span></div>
+                  {% else %}
+                  <div class="hist-list__cell hist-list__cell_currency"><span class="hist-list__text_red">{{ el.ref_profit }}</span></div>
+                  {% endif %}
+              </div>
+                {% endfor %}
+              </div>
+            </div>
+        </section>
+
+      </div>
+    </main>
+    <script src="static/js/index.js"> </script>
+    <script src="static/js/dashboard.js" type="module"> </script>
+  </body>
+</html>
